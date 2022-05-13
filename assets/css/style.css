@@ -1173,9 +1173,9 @@ section {
       WHATSAPP
 */
 .formularioWha{
-	width: 50%;
+	/* width: 100%; */
 	background: #f1f1f1;
-	height: 500px;
+	/* height: 500px; */
 	padding: 80px 40px;
   margin: 30px auto;
 	border-radius: 5px;
