@@ -541,7 +541,7 @@ section {
   overflow: hidden;
 }
 #about .about-img {
-  height: 510px;
+  /* height: 510px; */
   overflow: hidden;
 }
 #about .about-img img {
@@ -549,6 +549,9 @@ section {
   max-width: 100%;
 }
 @media (max-width: 768px) {
+  #about .content{
+    text-align: center;
+  }
   #about .about-img {
     height: auto;
   }
@@ -779,6 +782,15 @@ section {
   background: #eff5f5;
   overflow: hidden;
 }
+@media (max-width: 767px){
+  #clients .container .row{
+    text-align: center;
+  }
+  #clients img{
+    max-width: 70%;
+  }
+}
+
 .tituloClientes {
   font-size: 32px;
   color: #111;
@@ -796,166 +808,7 @@ section {
   opacity: 1;
 }
 
-/* Pricing Section
---------------------------------*/
-#pricing {
-  padding: 60px 0 60px 0;
-  overflow: hidden;
-}
-#pricing .box {
-  padding: 40px;
-  margin-bottom: 30px;
-  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-  background: #fff;
-  text-align: center;
-}
-#pricing h3 {
-  font-weight: 400;
-  margin-bottom: 15px;
-  font-size: 28px;
-}
-#pricing h4 {
-  font-size: 46px;
-  color: #1dc8cd;
-  font-weight: 300;
-}
-#pricing h4 sup {
-  font-size: 20px;
-  top: -20px;
-}
-#pricing h4 span {
-  color: #bababa;
-  font-size: 20px;
-}
-#pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #999;
-  text-align: left;
-  line-height: 20px;
-}
-#pricing ul li {
-  padding-bottom: 12px;
-}
-#pricing ul i {
-  color: #1dc8cd;
-  font-size: 18px;
-  padding-right: 4px;
-}
-#pricing .get-started-btn {
-  background: #515e61;
-  display: inline-block;
-  padding: 6px 30px;
-  border-radius: 20px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-}
-#pricing .featured {
-  border: 2px solid #1dc8cd;
-}
-#pricing .featured .get-started-btn {
-  background: linear-gradient(45deg, #193bc2, #1dc8cd);
-}
 
-/* Frequently Asked Questions Section
---------------------------------*/
-#faq {
-  padding: 60px 0;
-  overflow: hidden;
-}
-#faq .faq-list {
-  padding: 0;
-  list-style: none;
-}
-#faq .faq-list li {
-  border-bottom: 1px solid #f0f0f0;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-#faq .faq-list .question {
-  display: block;
-  position: relative;
-  font-family: #1dc8cd;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  padding-left: 25px;
-  cursor: pointer;
-  color: #179ca0;
-  transition: 0.3s;
-}
-#faq .faq-list i {
-  font-size: 16px;
-  position: absolute;
-  left: 0;
-  top: -2px;
-}
-#faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 25px;
-}
-#faq .faq-list .icon-show {
-  display: none;
-}
-#faq .faq-list .collapsed {
-  color: black;
-}
-#faq .faq-list .collapsed:hover {
-  color: #1dc8cd;
-}
-#faq .faq-list .collapsed .icon-show {
-  display: inline-block;
-  transition: 0.6s;
-}
-#faq .faq-list .collapsed .icon-close {
-  display: none;
-  transition: 0.6s;
-}
-
-/* Our Team Section
---------------------------------*/
-#team {
-  padding: 60px 0;
-  overflow: hidden;
-}
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
-}
-#team .member .pic {
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
-}
-#team .member .pic img {
-  max-width: 100%;
-}
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-}
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-#team .member .social {
-  margin-top: 15px;
-}
-#team .member .social a {
-  color: #b3b3b3;
-}
-#team .member .social a:hover {
-  color: #1dc8cd;
-}
-#team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
 
 /* Gallery Section
 --------------------------------*/
@@ -1024,6 +877,16 @@ section {
   transition: all ease-in-out 0.4s;
   /* width: 50%; */
 }
+@media (max-width: 767px) {
+  .producto .containerProducto .imagenesProductos .gallery-item{
+    text-align: center;
+  }
+
+  .producto .containerProducto .imagenesProductos .gallery-item img{
+    width: 70%;
+    text-align: center;
+}
+}
 
 .producto .containerProducto .imagenesProductos .gallery-item:hover img{
   transform: scale(1.1);
@@ -1061,6 +924,11 @@ section {
   text-transform: uppercase;
   color: #1dc8cd;
 }
+@media (max-width: 414px){
+  #contact .contact-about h3 {
+    text-align: center;
+  }
+}
 #contact .contact-about p {
   font-size: 14px;
   line-height: 24px;
@@ -1069,6 +937,12 @@ section {
 }
 #contact .social-links {
   padding-bottom: 20px;
+}
+
+@media (max-width: 414px){
+  #contact .social-links{
+    text-align: center;
+  }
 }
 #contact .social-links a {
   font-size: 18px;
@@ -1261,4 +1135,10 @@ section {
 }
 #footer .footer-links a:hover {
   color: #1dc8cd;
+}
+
+@media (max-width: 767px) {
+  #footer .footer-links{
+    margin-bottom: 20px;
+  }
 }
