@@ -234,7 +234,7 @@ formulario.addEventListener('submit', (event) => {
         //     window.open(urlMobile + mensaje, '_blank')
         // }else{
             // window.open(urlDesktop + mensaje, '_blank')
-            window.open(`${urlDesktop}${telefono}?text=Hola%20completa%20los%20siguientes%20datos:%0A%0A¿Cual%20es%20tu%20nombre?%0A${nombre}%0A¿Cuáles%20son%20tus%20apellidos?%0A${apellidos}%0A¿Cuál%20es%20tu%20correo%20electrónico?%0A${email}`, '_blank')
+            window.open(`${urlDesktop}${telefono}?text=Hola%20completa%20los%20siguientes%20datos:%0A%0A¿Cual%20es%20tu%20nombre?%0A${nombre}%0A¿Cuáles%20son%20tus%20apellidos?%0A${apellidos}%0A¿Cuál%20es%20tu%20correo%20electrónico?%0A${email}`)
         // }
         buttonSubmit.innerHTML = '<i class="fab fa-whatsapp"></i> Enviar WhatsApp'
         buttonSubmit.disabled = false
